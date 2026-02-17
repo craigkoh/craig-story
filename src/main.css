@@ -3,6 +3,8 @@
 
 :root {
   --color: #525252;
+  --terminal-green: #33ff33;
+  --terminal-yellow: #ffff33;
 }
 
 @font-face {
@@ -51,7 +53,7 @@ body {
   bottom: 0;
   width: clamp(0px, 95vw, 580px);
   margin: auto;
-  color: var(--color);
+  color: var(--terminal-green);
   outline: none;
   z-index: 0;
 }
@@ -127,8 +129,8 @@ body {
 
 h1 {
   display: inline-block;
-  color: #f6d4b1;
-  background-color: var(--color);
+  color: var(--terminal-yellow);
+  background-color: #1a1a1a;
   font-family: "public-pixel", monospace;
   font-size: 2em;
   padding: 16px;
@@ -137,14 +139,15 @@ h1 {
   margin: auto;
   margin-top: 0;
   margin-bottom: 0.3em;
+  border: 2px solid var(--terminal-yellow);
 }
 
 h2 {
   display: inline-block;
   font-size: 1.2em;
   text-align: center;
-  color: #f6d4b1;
-  background-color: var(--color);
+  color: var(--terminal-yellow);
+  background-color: #1a1a1a;
   font-family: "public-pixel", monospace;
   padding: 16px;
   padding-top: 4px;
@@ -152,6 +155,7 @@ h2 {
   margin: auto;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
+  border: 2px solid var(--terminal-yellow);
 }
 
 h3 {
@@ -174,7 +178,7 @@ hr {
   margin-top: 40px;
   margin-bottom: 40px;
   border: none;
-  border-bottom: dashed 2px var(--color);
+  border-bottom: dashed 2px var(--terminal-green);
 }
 
 .skills,
@@ -185,6 +189,7 @@ p {
   width: clamp(0px, 95vw, 680px);
   margin: auto;
   box-sizing: border-box;
+  color: var(--terminal-green);
 }
 .skills {
   display: flex;
@@ -202,8 +207,9 @@ p {
 .skills li {
   display: inline-block;
   padding: 4px 8px;
-  border: dashed 1px var(--color);
-  box-shadow: 1px 1px 0px #f6d4b1, 4px 4px 0px rgba(82, 82, 82, 0.25);
+  border: dashed 1px var(--terminal-green);
+  box-shadow: 1px 1px 0px var(--terminal-yellow), 4px 4px 0px rgba(82, 82, 82, 0.25);
+  color: var(--terminal-green);
 }
 
 .image {
@@ -223,7 +229,7 @@ p {
 }
 
 main {
-  color: var(--color);
+  color: var(--terminal-green);
   margin-top: 200vh;
   text-align: center;
   position: relative;
@@ -238,7 +244,7 @@ section {
 
 section::after {
   content: "";
-  border-bottom: dashed 2px var(--color);
+  border-bottom: dashed 2px var(--terminal-green);
   position: absolute;
   bottom: 0;
   transform: translateX(-50%);
@@ -259,14 +265,14 @@ footer {
   margin: auto;
   padding: 32px 0px;
   text-align: center;
-  color: var(--color);
+  color: var(--terminal-green);
   z-index: 2;
   position: relative;
 }
 
 a {
   display: inline-block;
-  color: inherit;
+  color: var(--terminal-green);
   text-decoration-style: solid;
   text-decoration-thickness: 2px;
   transition: all 0.3s;
