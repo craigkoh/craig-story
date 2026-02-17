@@ -1,7 +1,7 @@
-!(/images/craig-title.png?aspect=2&noflow=true&width=1.33)
+!(/images/craig-screen.jpg?aspect=2&noflow=true&width=1.33)
 
 
-##   Hi there, 
+##   Hello World, 
 
 #  *I'm Craig*
 
