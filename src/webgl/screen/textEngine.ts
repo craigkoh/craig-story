@@ -673,6 +673,9 @@ export default function ScreenTextEngine(
 
     const height = width / aspectRatio;
 
+    // Check for tint parameter
+    const tint = params.get("tint");
+    
     const imageFrame = new THREE.Mesh(
       new THREE.PlaneBufferGeometry(width, height, 1, 1),
       new THREE.MeshBasicMaterial({ color: 0x000000 })
@@ -685,7 +688,29 @@ export default function ScreenTextEngine(
     const textureLoader = new THREE.TextureLoader();
     textureLoader.load(url, (tex) => {
       tex.magFilter = THREE.NearestFilter;
-      imageFrame.material = new THREE.MeshBasicMaterial({ map: tex });
+      
+      // Apply tint if specified
+      if (tint === "dark") {
+        // Create a dark overlay by using multiply blend-like effect
+        imageFrame.material = new THREE.MeshBasicMaterial({ 
+          map: tex,
+          color: 0x444444
+        });
+      } else if (tint === "yellow") {
+        // Yellow/sepia tint for CRT look
+        imageFrame.material = new THREE.MeshBasicMaterial({ 
+          map: tex,
+          color: 0xffff88
+        });
+      } else if (tint === "green") {
+        // Green CRT tint
+        imageFrame.material = new THREE.MeshBasicMaterial({ 
+          map: tex,
+          color: 0x88ff88
+        });
+      } else {
+        imageFrame.material = new THREE.MeshBasicMaterial({ map: tex });
+      }
     });
   }
 
