@@ -676,12 +676,16 @@ export default function ScreenTextEngine(
     // Check for tint parameter
     const tint = params.get("tint");
     
+    // Check for x position parameter (move image left or right)
+    const xParam = parseFloat(params.get("x") ?? "");
+    const xPos = Number.isNaN(xParam) ? 1.4 / 2 : xParam;
+
     const imageFrame = new THREE.Mesh(
       new THREE.PlaneBufferGeometry(width, height, 1, 1),
       new THREE.MeshBasicMaterial({ color: 0x000000 })
     );
 
-    imageFrame.position.set(1.4 / 2, -height * 0.5 - charNextLoc.y, -0.02);
+    imageFrame.position.set(xPos, -height * 0.5 - charNextLoc.y, -0.02);
     if (!params.get("noflow")) charNextLoc.y += height;
     rootGroup.add(imageFrame);
 

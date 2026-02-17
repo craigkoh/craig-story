@@ -1,4 +1,4 @@
-!(/images/craig-screen.jpg?aspect=1.33&width=0.6&noflow=true&tint=dark)
+!(/images/craig-screen.jpg?aspect=1.33&width=0.4&x=1.1&noflow=true&tint=dark)
 
 
 ##   Hello World, 
