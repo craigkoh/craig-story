@@ -53,7 +53,7 @@ body {
   bottom: 0;
   width: clamp(0px, 95vw, 580px);
   margin: auto;
-  color: var(--terminal-green);
+  color: #333333;
   outline: none;
   z-index: 0;
 }
@@ -178,7 +178,7 @@ hr {
   margin-top: 40px;
   margin-bottom: 40px;
   border: none;
-  border-bottom: dashed 2px var(--terminal-green);
+  border-bottom: dashed 2px #333333;
 }
 
 .skills,
@@ -189,7 +189,7 @@ p {
   width: clamp(0px, 95vw, 680px);
   margin: auto;
   box-sizing: border-box;
-  color: var(--terminal-green);
+  color: #333333;
 }
 .skills {
   display: flex;
@@ -207,9 +207,9 @@ p {
 .skills li {
   display: inline-block;
   padding: 4px 8px;
-  border: dashed 1px var(--terminal-green);
+  border: dashed 1px #333333;
   box-shadow: 1px 1px 0px var(--terminal-yellow), 4px 4px 0px rgba(82, 82, 82, 0.25);
-  color: var(--terminal-green);
+  color: #333333;
 }
 
 .image {
@@ -229,7 +229,7 @@ p {
 }
 
 main {
-  color: var(--terminal-green);
+  color: #333333;
   margin-top: 200vh;
   text-align: center;
   position: relative;
@@ -244,7 +244,7 @@ section {
 
 section::after {
   content: "";
-  border-bottom: dashed 2px var(--terminal-green);
+  border-bottom: dashed 2px #333333;
   position: absolute;
   bottom: 0;
   transform: translateX(-50%);
@@ -265,14 +265,14 @@ footer {
   margin: auto;
   padding: 32px 0px;
   text-align: center;
-  color: var(--terminal-green);
+  color: #333333;
   z-index: 2;
   position: relative;
 }
 
 a {
   display: inline-block;
-  color: var(--terminal-green);
+  color: #333333;
   text-decoration-style: solid;
   text-decoration-thickness: 2px;
   transition: all 0.3s;
