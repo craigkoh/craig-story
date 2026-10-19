@@ -1,7 +1,7 @@
 # Hi there
 
-My name is Craig Kohler, and I'm an IT leader with 14+ years of experience in infrastructure and operations. I've worked my way up from help desk to leadership, and I've learned that tech isn't about the coolest gear — it's about people and relationships.
+My name is Craig Kohler. I'm a lifelong early adopter who loves tech, from my first Commodore 64 to today's AI tools.
 
-I was born and raised in Evansville, Indiana, and I'm currently looking for my next IT leadership role. When I'm not working, I'm diving into YouTube content creation and collecting vintage computers.
+I'm looking for Sales Engineer, Solutions Consultant, and AI Adoption Lead roles, remote or in Evansville, Indiana. I was previously VP of Enterprise Infrastructure & Operations at OneMain Financial.
 
 Type "cd ~/projects" then "ls" to see what I've been working on.

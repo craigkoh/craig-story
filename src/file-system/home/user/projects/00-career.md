@@ -1,9 +1,8 @@
 ## *Career in Tech*
-## 2010-Present
 
-### • IT Leadership
-### • Infrastructure
-### • Operations
-I've spent 14+ years in IT infrastructure and operations, from help desk to leadership. I've worn every hat and learned that technology is about people — building relationships that enable you to use tech and get real value from it.
+### • Sales Engineering
+### • Solutions Consulting
+### • AI Adoption
+I'm a lifelong early adopter who loves figuring out how new tech can help real people. Previously VP of Enterprise Infrastructure & Operations at OneMain Financial.
 
-Currently looking for my next IT leadership role in the Evansville, Indiana area.
+Open to Sales Engineer, Solutions Consultant, and AI Adoption Lead roles, remote or in Evansville, Indiana.

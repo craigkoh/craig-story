@@ -5,14 +5,14 @@
     <title>Craig Kohler – Personal Website</title>
     <meta
       name="description"
-      content="Craig Kohler - IT Leader with 14+ years experience, vintage computer collector, and content creator from Evansville, Indiana."
+      content="Craig Kohler - Sales Engineer, Solutions Consultant, and AI Adoption Lead. Lifelong early adopter, vintage computer collector, and co-creator of ActionCorp. Remote or Evansville, Indiana."
     />
 
     <link rel="icon" type="image/png" href="/icon/32x32.png" />
 
     <meta
       name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
     />
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/180x180.png" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -31,9 +31,13 @@
     <meta property="og:url" content="https://craigkohler.com/" />
     <meta property="og:image" content="https://craigkohler.com/icon/og-img1.png" />
     <meta
-      name="og:description"
-      content="IT Leader with 14+ years experience, vintage computer collector, and content creator from Evansville, Indiana."
+      property="og:description"
+      content="Craig Kohler - Sales Engineer, Solutions Consultant, and AI Adoption Lead. Lifelong early adopter, vintage computer collector, and co-creator of ActionCorp. Remote or Evansville, Indiana."
     />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Craig Kohler – Personal Website" />
+    <meta name="twitter:description" content="Craig Kohler - Sales Engineer, Solutions Consultant, and AI Adoption Lead. Lifelong early adopter, vintage computer collector, and co-creator of ActionCorp. Remote or Evansville, Indiana." />
+    <meta name="twitter:image" content="https://craigkohler.com/icon/og-img1.png" />
     <link rel="manifest" href="/manifest.json" />
     <script type="module" src="/src/main.ts"></script>
   </head>
@@ -47,15 +51,16 @@
       <h3>Hello World, I'm</h3>
       <h1>Craig</h1>
       <ul>
-        <li>IT Leader</li>
-        <li>Vintage Computing</li>
-        <li>Content Creator</li>
+        <li>Sales Engineer</li>
+        <li>Solutions Consultant</li>
+        <li>AI Adoption Lead</li>
       </ul>
+      <p class="lite-note">Remote or Evansville, Indiana · <a href="/?full"><u>View the 3D retro version</u></a></p>
     </div>
 
     <nav>
       <div class="menu-btn">
-        <button class="btn" onclick="toggleMenu()">
+        <button class="btn" onclick="toggleMenu()" aria-label="Menu">
           <svg width="16" height="16">
             <rect class="st0" width="16" height="3.2" />
             <rect y="6.4" class="st0" width="16" height="3.2" />
@@ -67,6 +72,7 @@
             class="btn"
             href="https://www.linkedin.com/in/craigkohler/"
             target="_blank"
+            aria-label="LinkedIn"
           >
             <svg width="16" height="16">
               <path
@@ -83,6 +89,7 @@
             class="btn"
             href="https://x.com/craigkoh"
             target="_blank"
+            aria-label="X"
           >
             <svg viewBox="0 0 24 24" width="16" height="16">
               <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -90,8 +97,9 @@
           </a>
           <a
             class="btn"
-            href="https://github.com/craigkoh/craig-story"
+            href="https://github.com/craigkoh"
             target="_blank"
+            aria-label="GitHub"
           >
             <svg width="16" height="16">
               <path
@@ -102,6 +110,16 @@
               />
             </svg>
           </a>
+          <a
+            class="btn"
+            href="https://www.youtube.com/@actioncorptv"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16">
+              <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/>
+            </svg>
+          </a>
         </div>
       </div>
 
@@ -109,23 +127,26 @@
         <a href="#home" onclick="closeMenu()">Home</a>
         <a href="#aboutMe" onclick="closeMenu()">About</a>
         <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#actioncorp" onclick="closeMenu()">ActionCorp</a>
         <a href="#contact" onclick="closeMenu()">Contact</a>
       </div>
 
       <div id="tip-scroll">Scroll &#8595;</div>
     </nav>
 
+    <a href="#aboutMe" class="btn" id="skip-link">Skip intro</a>
+
     <main>
       <section>
         <h1 id="aboutMe">Hello World</h1>
         <p>
-          My name is <strong>Craig Kohler</strong>, and I'm an IT leader with 14+ years of experience in infrastructure and operations. I've worked my way up from help desk to leadership, and I've learned that tech isn't about the coolest gear — it's about people and relationships.
+          My name is <strong>Craig Kohler</strong>. I'm a lifelong early adopter who loves tech, from my first Commodore 64 to today's AI tools. I like figuring out how new technology can help real people, and then showing them how.
         </p>
         <p>
-          I was born and raised in <strong>Evansville, Indiana</strong>, and I'm currently looking for my next IT leadership role.
+          I'm looking for <strong>Sales Engineer</strong>, <strong>Solutions Consultant</strong>, and <strong>AI Adoption Lead</strong> roles, remote or in <strong>Evansville, Indiana</strong>.
         </p>
         <p>
-          When I'm not working, I'm diving into YouTube content creation and collecting vintage computers.
+          When I'm not working, I'm making videos with my friends on ActionCorp, building little projects with AI, and collecting vintage computers.
         </p>
       </section>
 
@@ -133,17 +154,27 @@
         <h1 id="projects">Projects</h1>
         <hr />
         <h2>Career in Tech</h2>
-        <h3>2010-Present</h3>
         <ul class="skills">
-          <li>IT Leadership</li>
-          <li>Infrastructure</li>
-          <li>Operations</li>
+          <li>Sales Engineering</li>
+          <li>Solutions Consulting</li>
+          <li>AI Adoption</li>
         </ul>
         <p>
-          I've spent 14+ years in IT infrastructure and operations, from help desk to leadership. I've worn every hat and learned that technology is about people — building relationships that enable you to use tech and get real value from it.
+          Previously VP of Enterprise Infrastructure &amp; Operations at OneMain Financial.
+        </p>
+        <hr />
+        <h2>AI &amp; Builds</h2>
+        <ul class="skills">
+          <li>Built with AI tools</li>
+        </ul>
+        <p>
+          <a href="https://lunchloop.app" target="_blank"><u><b>lunchloop.app</b></u></a> – a lunch club app for 2–6 friends: turns, vetoes, and a shared restaurant list. Built with AI tools.
         </p>
         <p>
-          Currently looking for my next IT leadership role in the Evansville, Indiana area.
+          <a href="https://craigkoh.github.io/picture-buzzer/" target="_blank"><u><b>Picture Buzzer</b></u></a> – a real-time buzzer for picture trivia, with host, player, and stream views. Built with AI tools.
+        </p>
+        <p>
+          <a href="https://github.com/craigkoh/vectrex-logo-demo" target="_blank"><u><b>Vectrex Logo Demo</b></u></a> – turns an SVG logo into vector line art for a Vectrex or PiTrex display. Built with AI tools.
         </p>
         <hr />
         <h2>Vintage Collection</h2>
@@ -160,18 +191,25 @@
           Today, my collection includes classic machines from the golden age of personal computing.
         </p>
         <hr />
-        <h2>Content Creation</h2>
-        <h3>2024-Future</h3>
+        <h2>Garage</h2>
+        <p>
+          Two Teslas: a 2022 Model 3 named <strong>McQueen</strong> and a 2016 Model S P90D named <strong>Snow White</strong>.
+        </p>
+      </section>
+
+      <section>
+        <h1 id="actioncorp">ActionCorp</h1>
+        <h3>Revived 2026</h3>
         <ul class="skills">
           <li>YouTube</li>
-          <li>Tech Videos</li>
-          <li>Retro Computing</li>
+          <li>Biweekly Trivia</li>
+          <li>Friends</li>
         </ul>
         <p>
-          Recently I've been diving into YouTube and content creation. Combining my tech background with my personality — sharing what I know, documenting the journey, and having fun with it.
+          ActionCorp is a video show my friends and I started over 20 years ago, before YouTube existed. We brought it back in 2026, with a trivia segment every two weeks.
         </p>
         <p>
-          Check out my channel for videos on tech, vintage computing, and whatever else catches my interest.
+          <a href="https://www.youtube.com/@actioncorptv" target="_blank"><u><b>Check out my channel</b></u></a> at youtube.com/@actioncorptv.
         </p>
       </section>
 
@@ -186,12 +224,19 @@
         <p style="text-align: center">
           X/Twitter: <a href="https://x.com/craigkoh"><u><b>@craigkoh</b></u></a>
         </p>
+        <p style="text-align: center">
+          YouTube: <a href="https://www.youtube.com/@actioncorptv"><u><b>@actioncorptv</b></u></a>
+        </p>
+        <p style="text-align: center">
+          GitHub: <a href="https://github.com/craigkoh"><u><b>github.com/craigkoh</b></u></a>
+        </p>
       </section>
     </main>
 
     <input type="text" id="textarea" readonly />
     <div id="loading">
       <h2>Booting...</h2>
+      <button type="button" class="btn skip-intro" id="skip-intro">Skip intro &#8594;</button>
       <div id="loading-bar">
         <div id="loading-bar-progress"></div>
       </div>
@@ -200,7 +245,7 @@
     <footer>
       <div>Craig's Story - Personal Website</div>
       <div>Built with inspiration from Ed Hinrichsen's retro computer portfolio</div>
-      <div>COPYRIGHT © 2026 Craig Kohler</div>
+      <div>COPYRIGHT © 2026 Craig Kohler · Last updated October 2026</div>
     </footer>
     <script>
       function closeMenu() {

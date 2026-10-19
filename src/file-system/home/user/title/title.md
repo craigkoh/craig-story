@@ -5,9 +5,9 @@
 
 #  *I'm Craig*
 
-##   • IT Leadership
-##   • Vintage Computing
-##   • Content Creator
+##   • Sales Engineer
+##   • Solutions Consultant
+##   • AI Adoption Lead
 
 
 

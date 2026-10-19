@@ -2,6 +2,10 @@
 
 Email: craigkoh@gmail.com
 
-LinkedIn: https://www.linkedin.com/in/craigkohler/
+LinkedIn: linkedin.com/in/craigkohler
 
 X/Twitter: @craigkoh
+
+YouTube: youtube.com/@actioncorptv
+
+GitHub: github.com/craigkoh

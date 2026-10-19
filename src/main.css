@@ -353,3 +353,49 @@ a:active {
   color: #f6d4b1;
   border: #f6d4b1 solid 1px;
 }
+
+/* Skip intro + lightweight mode */
+.skip-intro {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+#skip-link {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 7;
+}
+html.lite .webgl,
+html.lite #loading,
+html.lite #skip-link,
+html.lite #tip-scroll {
+  display: none !important;
+}
+html.lite #hero-backup {
+  position: relative;
+  min-height: 0;
+  justify-content: flex-start;
+  padding: 96px 16px 48px;
+  box-sizing: border-box;
+}
+html.lite main {
+  margin-top: 0;
+}
+html.lite h1 {
+  font-size: 1.5em;
+}
+html.lite #hero-backup h1 {
+  font-size: 2.4em;
+}
+html.lite .lite-note {
+  font-size: 14px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+.lite-note {
+  display: none;
+}
+html.lite .lite-note {
+  display: block;
+}
